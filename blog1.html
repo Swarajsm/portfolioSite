@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<style>
+    a{
+        color: rgb(247, 247, 247);
+        background-color: black;
+    }
+    h1{
+        margin:auto; 
+    }
+    body{
+        background-color: rgb(226, 240, 247);
+    }
+    div{
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+    .navigation-bar{
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 2%;
+        background-color: black;
+        
+    }
+    .flex-gap > a{
+        margin: 5px;
+    }
+    .next{
+        background-color: black;
+        color: white;
+        font-size: 1em;
+    }
+</style>
+<html>
+    <head>
+        <title>Git for beginners </title>
+    </head>
+    <body>
+        <section class="navigation-bar flex-gap">
+            
+                <a href="https://swarajmahindre.in/"><h5>About</h5></a>
+                <a href="#"><h5>Blog</h5></a>
+            
+        </section>
+        <h1>
+           Git For Beginners
+        </h1>
+        <div class="main-text">
+            <p>
+                <a href="https://git-scm.com/" > Git</a> is an open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Services Like  <a href="https://github.com/">Github</a>  <a href="https://gitlab.com/">Gitlab</a>
+               
+            </p>
+            <p>
+                While these Services have a powerful User interface, which help in execution pretty much all of the Git operations right from your browser. But as you advance, You will eventually need to use command-line/(terminal).
+            </p>
+            <p>
+                You don't need to use any of the Services like Github/Gitlab to use git Locally, But you will need to have a Github account to collaborate with other users.
+            </p>
+            <h5>Let us first Set up git on your Local machine</h5>
+                <ul>
+                    <li>To check whether you have git already installed on your device:<br>
+                        <code>$ git --version</code>
+                        <p>Run this command on your terminal or Command shell. This Command checks for the current version installed in your system.</p>   
+                        <code>$ git --version
+                        <p>'git' command  not found</p>
+                        </code>
+                    </li>
+                    <li>
+                        <p>Now we will have to install git in your local machine, It is recommended to use git to save all your projects as it it helps you to maintain a record of all the version and changes made with each of the iteration, so if the situation goes south with your project, you can always revert back to the last stable version</p>
+                        <code class="language-git">
+                        <ol>
+                        <li>sudo add-apt-repository ppa:git-core/ppa</li>
+                        <li>sudo apt update</li>
+                        <li>sudo apt install git</li>
+                         </code></ol>
+                    </li>
+                    <li>
+                        <p>Now check for the git version installed in your system from the command from the first point.</p>
+                        <code>
+                        <ol><li>git --version</li></ol>
+                        </code>
+                        <p>Git is now successfully installed on your system, next we will configure it for our username and emailId, This setting will help in recording for what user made what changes to the project<br>You might want to move up aheah and create a new <a href="https://github.com/">Github account</a><br>Once you are done with cretaing your Github account, Now we could  use it locally for our local projects as soon as we installed `git`. Now we are ready to tell Github about our system, so that we dont have to enter a new password every time we want to commit a change</p>
+                    </li>
+                </ul>
+            <div class="social-container"> <i class="fab fa-twitter"></i> 
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </body>
+</html>
